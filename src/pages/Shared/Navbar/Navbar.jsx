@@ -1,8 +1,10 @@
+// import { useContext } from "react";
 import { Link } from "react-router-dom";
+// import { AuthContext } from "../../../providers/AuthProvider";
 // import logo from "../../../assets/Logo.jpg";
 // import { useContext } from "react";
 // import { AuthContext } from "../../../providers/AuthProvider";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
 //   const { logOut } = useContext(AuthContext);
@@ -43,6 +45,14 @@ const Navbar = () => {
     <>
       <li>
         <Link to="/">Home</Link>
+      </li>
+
+      <li>
+        <Link to="/login">Login</Link>
+      </li>
+      
+      <li>
+        <Link to="/register">Register</Link>
       </li>
 
       {/* <li>
