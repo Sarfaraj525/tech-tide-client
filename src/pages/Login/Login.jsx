@@ -41,6 +41,23 @@ const Login = () => {
           });
         });
     };
+
+
+    const handleGoogleLogIn = () => {
+        signInWithGoogle()
+          .then((result) => {
+            console.log(result.user);
+            Swal.fire({
+              icon: "success",
+              title: "Logged in successfully!",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      };
     return (
         <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
@@ -98,7 +115,7 @@ const Login = () => {
               </button>
             </Link>{" "}
           </p>
-          {/* <div>
+          <div>
             <p className="text-center mb-10">
               <button
                 onClick={handleGoogleLogIn}
@@ -107,7 +124,7 @@ const Login = () => {
                 Google
               </button>
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
