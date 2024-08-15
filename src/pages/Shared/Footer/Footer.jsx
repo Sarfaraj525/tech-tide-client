@@ -23,8 +23,8 @@ const Footer = () => {
       </div> */}
       <div>
         <h2 className="text-2xl font-bold">
-          <span className="text-orange-500">Share</span>
-          <span className="text-sky-500">plate</span>
+          <span className="text-orange-500">Tech</span>
+          <span className="text-sky-500">Tide</span>
         </h2>
       </div>
 
