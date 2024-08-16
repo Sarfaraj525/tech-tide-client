@@ -36,14 +36,14 @@ const Home = () => {
   }, [brand, cat, minPrice, maxPrice]);
   
   
-console.log(maxPrice, minPrice );
+// console.log(maxPrice, minPrice );
 
 
 
   return (
     <div className="min-h-lvh">
       <div className="m-20">
-        <h1 className="text-6xl text-orange-600 text-center">
+        <h1 className="text-6xl text-orange-600 text-center mb-8">
           Tech Products: {products.length}
         </h1>
 
@@ -114,12 +114,33 @@ console.log(maxPrice, minPrice );
                     >
                       <option value="">Please select</option>
                       <option value="Samsung">Samsung</option>
-                      <option value="SRV">Stevie Ray Vaughn</option>
-                      <option value="JH">Jimi Hendrix</option>
-                      <option value="BBK">B.B King</option>
-                      <option value="AK">Albert King</option>
-                      <option value="BG">Buddy Guy</option>
-                      <option value="EC">Eric Clapton</option>
+                      <option value="Apple">Apple</option>
+                      <option value="Google">Google</option>
+                      <option value="OnePlus">OnePlus</option>
+                      <option value="Xiaomi">Xiaomi</option>
+                      <option value="Nokia">Nokia</option>
+                      <option value="Sony">Sony</option>
+                      <option value="Oppo">Oppo</option>
+                      <option value="Huawei">Huawei</option>
+                      <option value="Realme">Realme</option>
+                      <option value="Asus">Asus</option>
+                      <option value="Vivo">Vivo</option>
+                      <option value="ZTE">ZTE</option>
+                      <option value="Microsoft">Microsoft</option>
+                      <option value="Infinix">Infinix</option>
+                      <option value="LG">LG</option>
+                      <option value="HTC">HTC</option>
+                      <option value="Lenovo">Lenovo</option>
+                      <option value="Alcatel">Alcatel</option>
+                      <option value="ZTE">ZTE</option>
+                      <option value="TCL">TCL</option>
+                      <option value="Honor">Honor</option>
+                      <option value="Meizu">Meizu</option>
+                      <option value="BlackBerry">BlackBerry</option>
+                      <option value="Micromax">Micromax</option>
+                      <option value="Karbonn">Karbonn</option>
+                      <option value="Gionee">Gionee</option>
+                      <option value="Lava">Lava</option>
                     </select>
                   </div>
                 </div>
@@ -137,6 +158,7 @@ console.log(maxPrice, minPrice );
                   >
                     <li onClick={()=>setCat("Smartphone")}>
                       <a>Smartphone</a>
+                      <a>Gaming Smartphone</a>
                     </li>
                   </ul>
                 </div>
@@ -160,6 +182,9 @@ console.log(maxPrice, minPrice );
                     </li>
                     <li onClick={()=>{setMinPrice(100000), setMaxPrice(150000)}}>
                       <a>100000-150000</a>
+                    </li>
+                    <li onClick={()=>{setMinPrice(150000), setMaxPrice(200000)}}>
+                      <a>150000-200000</a>
                     </li>
                   </ul>
                 </div>
