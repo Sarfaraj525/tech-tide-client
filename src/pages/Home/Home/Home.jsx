@@ -80,7 +80,7 @@ console.log(maxPrice, minPrice );
 
 
           {/* Categorization */}
-          {/* <div className="pr-28">
+          <div className="pr-28">
             <div
               onClick={() => setShow(!show)}
               role="button"
@@ -167,7 +167,7 @@ console.log(maxPrice, minPrice );
 
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
