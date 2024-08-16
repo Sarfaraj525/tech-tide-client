@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>Copyright © 2024 - All right reserved by Share Plate Ltd</p>
+        <p>Copyright © 2024 - All right reserved by Tech Tide Ltd</p>
       </aside>
     </footer>
   );

@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 // import { useContext } from "react";
 // import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { useContext } from "react";
 
 const Navbar = () => {
-//   const { logOut } = useContext(AuthContext);
+  const { logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
     Swal.fire({
@@ -50,29 +52,11 @@ const Navbar = () => {
       <li>
         <Link to="/login">Login</Link>
       </li>
-      
+
       <li>
         <Link to="/register">Register</Link>
       </li>
 
-      {/* <li>
-        <Link to="/login">Login</Link>
-      </li>
-      <li>
-        <Link to="/register">Register</Link>
-      </li>
-      <li>
-        <Link to="/addFood">Add Food</Link>
-      </li>
-      <li>
-        <Link to="/availableFoods">Available Foods</Link>
-      </li>
-      <li>
-        <Link to="/manageMyFoods">My Foods</Link>
-      </li>
-      <li>
-        <Link to="/myFoodRequest">Food Request</Link>
-      </li> */}
     </>
   );
   return (
