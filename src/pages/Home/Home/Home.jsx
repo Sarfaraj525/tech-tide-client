@@ -73,7 +73,7 @@ const Home = () => {
 
   return (
     <div className="min-h-lvh ">
-      <div className=" m-6 lg:m-20">
+      <div className="  lg:m-20">
         <h1 className="text-3xl text-orange-600 text-center mb-8">
           Tech Products...
         </h1>
