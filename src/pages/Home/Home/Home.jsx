@@ -3,7 +3,6 @@ import ProductCard from "../../ProductCard";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  //   const products = useLoaderData();
   const [products, setProducts] = useState([]);
   const [sort, setSort] = useState("priceLowHigh");
   const [show, setShow] = useState(false);
@@ -67,7 +66,7 @@ const Home = () => {
   // console.log(currentPage);
 
   const handleSort = (opt) => {
-    fetch(`http://localhost:5000/products/${opt}`)
+    fetch(`https://tech-tide-server.vercel.app/products/${opt}`)
       .then((data) => data.json())
       .then((res) => setProducts(res));
   };
