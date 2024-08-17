@@ -72,11 +72,11 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-lvh">
-      <div className="m-20">
-        {/* <h1 className="text-6xl text-orange-600 text-center mb-8">
-          Tech Products: {products.length}
-        </h1> */}
+    <div className="min-h-lvh ">
+      <div className=" m-6 lg:m-20">
+        <h1 className="text-3xl text-orange-600 text-center mb-8">
+          Tech Products...
+        </h1>
 
         <div className="md:flex md:justify-between ">
           <input
@@ -232,7 +232,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+        <div className="grid grid-cols-1  md:grid-cols-3 gap-4">
           {products.map((products) => (
             <ProductCard key={products._id} products={products}></ProductCard>
           ))}
@@ -243,7 +243,7 @@ const Home = () => {
       <div className="join grid-cols-2 mx-auto mt-16 flex justify-center mb-16">
         <button
           onClick={handlePrevious}
-          className="join-item btn btn-outline mr-1"
+          className="join-item btn-outline mr-1 btn-sm lg:btn"
         >
           Previous page
         </button>
@@ -254,7 +254,7 @@ const Home = () => {
               key={page}
               onClick={() => setCurrentPage(page)}
               className={`
-                                    btn btn-square ${
+                                    btn btn-square w-7 lg:w-10 ${
                                       currentPage != i
                                         ? "bg-orange-600"
                                         : " bg-white "
@@ -264,7 +264,7 @@ const Home = () => {
             </button>
           ))}
         </div>
-        <button onClick={handleNext} className="join-item btn btn-outline">
+        <button onClick={handleNext} className="join-item btn-outline btn-sm lg:btn">
           Next
         </button>
       </div>
