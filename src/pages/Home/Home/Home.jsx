@@ -72,13 +72,14 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-lvh ">
-      <div className="  lg:m-20">
+    <>
+    <div className="container mx-auto ">
+      <div className=" ml-auto lg:ml-10">
         <h1 className="text-3xl text-orange-600 text-center mb-8">
           Tech Products...
         </h1>
 
-        <div className="md:flex md:justify-between ">
+        <div className=" ml-10 md:flex md:justify-between ">
           <input
             onChange={handleSearch}
             className="px-2 py-1 border-4 h-10 w-30"
@@ -108,7 +109,7 @@ const Home = () => {
           </div>
 
           {/* Categorization */}
-          <div className="pr-28">
+          <div className="pr-28 ml-6">
             <div
               onClick={() => setShow(!show)}
               role="button"
@@ -232,7 +233,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1  md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1  md:grid-cols-3 mx-2 gap-4">
           {products.map((products) => (
             <ProductCard key={products._id} products={products}></ProductCard>
           ))}
@@ -240,10 +241,10 @@ const Home = () => {
       </div>
 
       {/* Pagenation */}
-      <div className="join grid-cols-2 mx-auto mt-16 flex justify-center mb-16">
+      <div className="join grid-cols-2 mx-auto mt-16 flex justify-center mb-16 ml-6">
         <button
           onClick={handlePrevious}
-          className="join-item btn-outline mr-1 btn-sm lg:btn"
+          className="join-item btn-outline  btn-sm lg:btn"
         >
           Previous page
         </button>
@@ -269,6 +270,7 @@ const Home = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
