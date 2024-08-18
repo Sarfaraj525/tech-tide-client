@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/products/?currentPage=${currentPage}&brand=${brand}&category=${cat}&maxPrice=${maxPrice}&minPrice=${minPrice}&search=${search}&sort=${sort}`
+      `https://tech-tide-server.vercel.app/products/?currentPage=${currentPage}&brand=${brand}&category=${cat}&maxPrice=${maxPrice}&minPrice=${minPrice}&search=${search}&sort=${sort}`
     )
       .then((data) => data.json())
       .then((res) => setProducts(res));
@@ -30,7 +30,7 @@ const Home = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/totalProducts/?brand=${brand}&category=${cat}&maxPrice=${maxPrice}&minPrice=${minPrice}&search=${search}`
+      `https://tech-tide-server.vercel.app/totalProducts/?brand=${brand}&category=${cat}&maxPrice=${maxPrice}&minPrice=${minPrice}&search=${search}`
     )
       .then((data) => data.json())
       .then((res) => setTotalPage(res.count));
@@ -75,7 +75,7 @@ const Home = () => {
                   onChange={(e) => setSearch(e.target.value)}
                   placeholder="Search"
                 />
-                <button type="submit" className="btn btn-md bg-orange-500">
+                <button type="submit" className="btn btn-sm w-20 h-10 bg-orange-500 ">
                   Search
                 </button>
               </div>
@@ -103,7 +103,7 @@ const Home = () => {
             </div>
 
             {/* Categorization */}
-            <div className="pr-28 ml-6">
+            <div className="pr-28 ">
               <div
                 onClick={() => setShow(!show)}
                 role="button"
