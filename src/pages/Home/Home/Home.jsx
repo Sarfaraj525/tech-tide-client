@@ -90,10 +90,10 @@ const Home = () => {
                 tabIndex={0}
                 className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
               >
-                <li onClick={() => setSort("highToLow")}>
+                <li onClick={() => setSort("LowToHigh")}>
                   <a>Low to High</a>
                 </li>
-                <li onClick={() => setSort("LowToHigh")}>
+                <li onClick={() => setSort("highToLow")}>
                   <a>High to Low</a>
                 </li>
                 <li onClick={() => setSort("new")}>
