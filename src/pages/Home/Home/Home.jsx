@@ -28,6 +28,8 @@ const Home = () => {
       .then((res) => setProducts(res));
   }, [brand, cat, maxPrice, minPrice, call, sort, currentPage]);
 
+  // https://tech-tide-server.vercel.app
+
   useEffect(() => {
     fetch(
       `https://tech-tide-server.vercel.app/totalProducts/?brand=${brand}&category=${cat}&maxPrice=${maxPrice}&minPrice=${minPrice}&search=${search}`
